@@ -114,7 +114,7 @@ export const ProfileScreen = ({ navigation }) => {
               }}
             >
               <Text style={{ ...styles.textUserName, fontSize: 16 }}>
-              У Вас немає постів
+                У Вас немає постів
               </Text>
             </View>
           }
@@ -217,9 +217,7 @@ export const ProfileScreen = ({ navigation }) => {
                   }
                 >
                   <Location />
-                  <Text style={styles.cardText}>
-                    {item.regionName[0].country}
-                  </Text>
+                  <Text style={styles.cardText}></Text>
                 </TouchableOpacity>
               </View>
             </View>

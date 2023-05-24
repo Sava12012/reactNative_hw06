@@ -69,7 +69,7 @@ export const LoginScreen = ({ navigation }) => {
       email,
       password,
     };
-    console.log(currentUser);
+    // console.log(currentUser);
     dispatch(authSignInUser(currentUser));
     setEmail("");
     setPassword("");
@@ -124,7 +124,7 @@ export const LoginScreen = ({ navigation }) => {
               >
                 <View style={{ width: windowWidth - 16 * 2 }}>
                   <Text style={{ ...styles.title, fontFamily: "RobotoMedium" }}>
-                  Увійти
+                    Увійти
                   </Text>
 
                   <TextInput
@@ -185,7 +185,7 @@ export const LoginScreen = ({ navigation }) => {
                     onPress={() => navigation.navigate("Registration")}
                   >
                     <Text style={{ ...styles.link, fontFamily: "Roboto" }}>
-                    Немає облікового запису? Зареєструватись
+                      Немає облікового запису? Зареєструватись
                     </Text>
                   </TouchableOpacity>
                 </View>

@@ -123,7 +123,7 @@ export const PostsScreen = ({ route, navigation }) => {
             }}
           >
             <Text style={{ ...styles.textUserName, fontSize: 16 }}>
-            Зараз у Вас немає постів
+              Зараз у Вас немає постів
             </Text>
           </View>
         }
@@ -208,9 +208,7 @@ export const PostsScreen = ({ route, navigation }) => {
                 }
               >
                 <Location />
-                <Text style={styles.cardText}>
-                  {item.regionName[0].city}, {item.regionName[0].country}
-                </Text>
+                <Text style={styles.cardText}></Text>
               </TouchableOpacity>
             </View>
           </View>

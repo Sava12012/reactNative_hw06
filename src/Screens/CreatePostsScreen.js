@@ -73,7 +73,15 @@ export const CreatePostsScreen = ({ route, navigation }) => {
   const uploadPostToServer = async () => {
     try {
       const imageRef = await uploadPhotoToServer(image);
-      console.log (imageRef, location, userId, login, regionName,postRef,title)
+      console.log(
+        imageRef,
+        location,
+        userId,
+        login,
+        regionName,
+        postRef,
+        title
+      );
       const postRef = await addDoc(collection(firestore, "posts"), {
         photo: imageRef,
         title,
@@ -208,11 +216,12 @@ export const CreatePostsScreen = ({ route, navigation }) => {
                 }}
                 onFocus={() => setIsFocusedLocation(true)}
                 onBlur={() => setIsFocusedLocation(false)}
-                value={
-                  regionName
-                    ? `${regionName[0].city}, ${regionName[0].country}`
-                    : " "
-                }
+                onChangeText={setLocation}
+                // value={
+                //   regionName
+                //     ? `${regionName[0].city}, ${regionName[0].country}`
+                //     : " "
+                // }
                 textContentType={"location"}
                 placeholder="Місцевість..."
                 cursorColor={"#BDBDBD"}
